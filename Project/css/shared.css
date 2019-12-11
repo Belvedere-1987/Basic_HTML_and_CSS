@@ -1,6 +1,6 @@
 html{
     font-family:sans-serif;
-    font: size 62.5%;
+    font-size: 62.5%;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -32,13 +32,13 @@ h1 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
     }
 h1::after {
-    display:block;
-    content:'';
-    height:2px;
-    width:150px;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 150px;
     background:#e91c1c;
     margin: 5px auto 40px;
-    box-shadow:5px 2px 3px rgba(0,0,0,0.5)
+    box-shadow:5px 2px 3px rgba(0,0,0,0.5);
 }
 h2{
     line-height:50px;
@@ -60,7 +60,7 @@ p{
     line-height: 30px;
     padding-bottom: 15px;
 }
-.test-center {
+.text-center {
     text-align: center;
 }
 .heading-padding {
@@ -110,7 +110,7 @@ section{
 .menu-container{
     max-height: 340px;
     margin: 0% auto;
-    content: "";
+    content: " ";
     width: 100%;
     position: fixed;
     z-index: 100;
@@ -120,15 +120,16 @@ section{
     background-attachment: fixed;
    -webkit-background-size: cover;
     -moz-background-size:cover;
+    -o-background-size: cover;
     background-size: cover;
     width: 100%;
-    display:block;
+    display: block;
     height: auto;
     padding-top: 350px;
     padding-bottom: 500px;
     color:#fff}
 .head-main {
-    text-shadow: 2px 4px 5px rgba (0,0,0,0.9);
+    text-shadow: 2px 4px 5px rgba(0,0,0,0.9);
     font-variant: small-caps;
     color: #fff;
     letter-spacing: 5pt;
@@ -145,7 +146,7 @@ section{
 .head-sub-main {
     font-size:23px;
     font-weight: 500;
-    padding: 50px 20px 10 px 20 px;
+    padding: 50px 20px 10px 20px;
     text-transform: uppercase;
 }
 
@@ -166,6 +167,7 @@ border-radius: 8px;
 margin: 0px auto;
 background-color: rgba(100,65,0,.3);
 box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
+width: 1000px;
 }
 
 #Contact {
@@ -204,10 +206,11 @@ box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
     word-spacing: .3pt;
 }
 
-.reservation p{
+.reservation p {
     color:#13161B;
     width: 50%;
     margin: 0 auto;
+    text-align:center;
     }
 
 .reservation form {
@@ -224,7 +227,7 @@ box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
     box-shadow: 2px 3px 3px 0px rgba(0,0,0,0.3);
     font-family: "Raleway", sans-serif;
 }
-.reservation input [type="text"] {
+.reservation input[type="text"] {
     font-size: 15px;
     outline: none;
     font-weight: 600;
@@ -256,10 +259,10 @@ box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
     cursor: pointer;
     font-family: "Raleway", sans-serif;
     font-weight:600;
-    margin-top:13%;
     position: relative;
     display: inline;
     float: right;
+    margin-top: 7.75%; 
 }
 .terms:hover {
     color:orange;
@@ -284,11 +287,11 @@ box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
     }
 .submit input[type="submit"]:hover {
     color:#000;
-    background-color: #8D8E8f;
-    box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,0.5) ;
+    background-color: #8D8E8F;
+    box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,0.5);
     }
 #footer {
-        background-color: rgba(100,665,0,.3);
+        background-color: rgba(100,65,0,.3);
         color:#000;
         text-shadow: 2px 2px 8px 0 (0,0,0,0.4);
         padding: 20px 50px 20px 50px;
@@ -313,4 +316,5 @@ box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
     .container{
         width: 970px;
     }
+}
 }
