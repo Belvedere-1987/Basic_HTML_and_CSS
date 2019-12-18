@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> GO HAWKS </title>
+        <Meta charset="utf-8">
+        <style>
+            .logo_container{
+                display:block;
+                margin-left:auto;
+                margin-right:auto;
+                width: 25%;
+            }
+            .logo {
+                display: block
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                filter:grayscale(100%);
+                                    }
+
+            .overlay{
+
+                margin-left: auto;
+                margin-right:auto;
+                height:100%;
+                width:100%;
+                opacity:0;
+                transition: .5s ease;
+                background-color:gray;
+            }
+
+            .logo_container:hover .overlay{
+                opacity:1;
+            }
+            .text{
+                color: midnightblue;
+                font-size: 20px;
+                position: relative;
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            footer p {
+                text-align:center;
+                 font-weight: bold;
+                        }
+            table,th,td{
+                border: 5px double black;
+                background-color: steelblue;
+                color: white;
+                margin-left:auto;
+                margin-right:auto;
+                margin-top: 25px;
+                margin-bottom:25px;
+                }
+
+            th{ 
+                background-color: slategray;
+                border:1px solid black;
+                padding: 5px;
+                }
+            td{
+                padding: 5px;
+                border:1px solid black;
+                text-align: center;
+            }
+            .QB{
+                width: 50%;
+                height:50%;
+                display:block;
+                margin-right:auto;
+                margin-left:auto;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+            .container {
+                position: relative;
+                text-align: center;
+                color:greenyellow;
+
+            }
+            .bottom-left{
+                position:absolute;
+                bottom: 8px;
+                left: 275px;
+                font-size:large;
+            }
+            .navbar{
+                list-style: none;
+                position:fixed;
+                top:0; 
+                background-color:slategray;
+                color:white;
+                width: 100%;
+                text-align:right;
+                z-index: 100;
+            }
+            .navbar li{
+                display:inline-block;
+                color: lawngreen;
+                cursor: pointer;
+                font-size:large;
+            }
+            .navbar li:hover{ 
+                 color: lightgray;
+                 background-color:midnightblue;
+            }
+        
+            p:hover {
+               color: red;
+
+            }
+            .column_a,.column_b,.row {
+                box-sizing: border-box;
+                            }
+            .row {
+                    margin-left:auto;
+                    margin-right:auto;
+            }
+            .column_a,.column_b {
+                float: left;
+                width: 25%;
+                padding: 10px;
+                height: 200px;
+            }
+            .column_a{
+                background-color:midnightblue;
+                color:yellowgreen;
+            }
+            .column_b{
+                background-color:darkred;
+                color: gold;
+            }
+            .row:after {
+                content:"";
+                display: table;
+                clear:both;
+            }
+            
+        </style>
+	</head>
+	<body>
+
+        <div>
+            <ul class=navbar>
+                <a href="#home"><li> Home |</li></a>
+                <a href="#about"> <li>About |</li></a>
+                <a href="#contact"><li>Contact |</li></a>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="logo_container">
+            <img class="logo" src="./seahawks.png" alt="Seahawks_logo" id="home">
+            <div class="overlay">
+                <div class="text">GO HAWKS!!!!</div>    
+            </div>
+        </div>
+        <div class= "container">  
+            <img class="QB" src="./Russell_Wilson.jpg" alt="Russell Wilson">
+                <div class="bottom-left">Greatest QB in the game today!!!</div>
+        </div>
+        <p> The Seahawks will win the NFC west championship this year</p>
+
+        <table id="about">
+            <tr>
+                <th>Name</th>
+                <th>Yards</th>
+                <th>TDs</th>
+                <th>Turnovers</th>
+            </tr>
+            <tr>
+                <td>Russell Wilson</td>
+                <td>3,789</td>
+                <td>36</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Chris Carson</td>
+                <td>1,200</td>
+                <td>12</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Tyler Lockett</td>
+                <td>950</td>
+                <td>9</td>
+                <td>0</td>
+            </tr>
+
+            <div class="row">
+                <div class="column_a">
+                    <h2>Teams with SB Victories in past the 10 years</h2>
+                    <p>Seattle Seahawks</p>
+                </div>
+                <div class="column_b">
+                    <h2>Teams without SB Victories in the past 10 years</h2>
+                    <p>San Francisco 49ers</p>
+                </div>
+            </div>
+        
+            
+
+        </table>
+        <footer id="contact">
+            <p> Created on 12/12/2019| Johnson Interprises&copy;</p>
+        </footer>
+    </body>
+</html>
