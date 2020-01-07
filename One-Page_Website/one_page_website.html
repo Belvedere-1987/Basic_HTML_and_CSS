@@ -53,19 +53,17 @@
 				<h1> Pictures </h1>
 					<div class="row">
 				<!--Picture1-->
-					<div class="column"> 
+					<div class="column">
 						<img src="Images\jordan_1.jpg" alt="Michael Jordan"
 						onclick="openModal();currentSlide(1)" class="hover-shadow"></img>
 					</div>
-					<br>
-				<!--End Picture1-->
+									<!--End Picture1-->
 				
 				<!--Picture2-->
 					<div class="column">
 						<img src="Images\jordan_2.jpg" alt="Michael Jordan"
 						onclick="openModal();currentSlide(2)" class="hover-shadow"></img>
 					</div>
-					<br>
 				<!--End of Picture2-->
 				
 				<!--Picture3-->
@@ -73,7 +71,6 @@
 						<img src="Images\jordan_3.jpg"  alt="Michael Jordan"
 						onclick="openModal();currentSlide(3)" class="hover-shadow"></img>
 					</div>
-					<br>
 				<!--End Picture3-->
 				
 				<!--Picture4-->
@@ -81,7 +78,6 @@
 						<img src="Images\jordan_4.jpg" alt="Michael Jordan"
 						onclick="openModal();currentSlide(4)" class="hover-shadow"></img>
 					</div>
-					<br>
 				<!--End Picture4-->	
 
 				<!--Picture5-->
@@ -90,34 +86,46 @@
 						onclick="openModal();currentSlide(5)" class="hover-shadow"></img>
 					</div>
 				<!--End Picture5-->
+
+				<!--Picture6-->
+					<div class="column">
+							<img src="Images\lebron_2.jpg" alt="Lebron James"
+							onclick="openModal();currentSlide(5)" class="hover-shadow"></img>
+					</div>
+				<!--End Picture6-->
 				</div>
 				<div id="myLightBox" class="lightBox">
 					<span class="close" onclick="closeLightBox()">&times;</span>
 					<div class="lightBoxContent">
 
 						<div class="mySlides">
-							<div class="number">1/5</div>
+							<div class="number">1/6</div>
 							<img src="Images\jordan_1.jpg" style="width:100%">
 						</div>
 
 						<div class="mySlides">
-							<div class="number">2/5</div>
+							<div class="number">2/6</div>
 							<img src="Images\jordan_2.jpg" style="width:100%">
 						</div>
 
 						<div class="mySlides">
-							<div class="number">3/5</div>
+							<div class="number">3/6</div>
 							<img src="Images\jordan_3.jpg" style="width:100%">
 						</div>
 
 						<div class="mySlides">
-							<div class="number">4/5</div>
+							<div class="number">4/6</div>
 							<img src="Images\jordan_4.jpg" style="width:100%">
 						</div>
 
 						<div class="mySlides">
-							<div class="number">5/5</div>
+							<div class="number">5/6</div>
 							<img src="Images\lebron_1.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="number">6/6</div>
+							<img src="Images\lebron_2.jpg" style="width:100%">
 						</div>
 
 						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -141,6 +149,10 @@
 
 						<div class="column1">
 							<img class="demo" src="Images\lebron_1.jpg" onclick="currentSlide(5)" alt="Lebron">
+						</div>
+
+						<div class="column1">
+							<img class="demo" src="Images\lebron_2.jpg" onclick="currentSlide(6)" alt="Lebron">
 						</div>
 					</div>
 

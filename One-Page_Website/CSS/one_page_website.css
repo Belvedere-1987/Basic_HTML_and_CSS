@@ -52,11 +52,13 @@ form input[type="text"] {
     display:table; 
     clear: both;
 }
-.column img{
-    float: left; 
-    width: 20%;
-    height: 300px; 
-    object-fit: scale-down;
+.row img{
+    float:left;
+    width: 35%;
+    height: 400px; 
+    object-fit: cover;
+    margin-left:10%; 
+    padding-bottom: 5%;    
 }
 
 .column1 img{
@@ -108,7 +110,8 @@ cursor: pointer;
     display: none;
 }
 .mySlides img{
-    height: 700px; 
+    height: 500px; 
+    object-fit: cover;
 }
 .prev,
 .next{
