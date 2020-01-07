@@ -55,7 +55,15 @@ form input[type="text"] {
 .column img{
     float: left; 
     width: 20%;
-    height: 400px; 
+    height: 300px; 
+    object-fit: scale-down;
+}
+
+.column1 img{
+    float: left; 
+    width: 20%;
+    height: 100px; 
+    object-fit: scale-down;
 }
 
 .lightBox {
