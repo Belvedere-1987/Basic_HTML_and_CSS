@@ -1,10 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <link rel= "stylesheet" type= "text/css" href="Basic_CSS_2.css">
 </head>
 	<body>
-		<p>Spiderman&copy; is &#34;cool&#34;</p>
+		<script>document.body.className += 'fade-out';</script> 
+		<p style="font-size:6vw;">Spiderman&copy; is &#34;cool&#34;</p>
+		<script> 
+		$(function(){
+			$('body').removeClass('fade-out');
+		})
+			</script>
+		
+		<button class="open-button" onclick="openForm()">Open Form</button>
+		
+		<div class="popup" id="popup_form">
+		
+			<form name="contact" onsubmit="return validateForm()">
+
+				First name: <br> 
+				<input type="text" name="firstname"><br>
+				Last name: <br>
+				<input type="text" name="lastname"><br>
+				Phone number: <br>
+				<input type="tel" name="phone_number"><br>
+				<input type="submit" value="Submit">
+				<button type="button" class="cancel" onclick="closeForm()">&times;</button>
+
+			</form>
+
+		</div>
+		<br> 
+		<br>
+		<div class=zoom>
+			<img src="Spiderman.png"><img>
+		</div>
+		<script> 
+		
+		function  openForm() {
+			document.getElementById("popup_form").style.display="block"
+		}
+
+		function closeForm() {
+			document.getElementById("popup_form").style.display="none";
+		}
+
+		function validateForm(){
+			var x = document.forms["contact"]["phone_number"].value;
+			var y =document.forms["contact"]["firstname"].value;
+			var z = document.forms["contact"]["phone_number"].value;
+			if (x=="" || y=="" || z=="" ){
+				alert("Please fill out all fields");
+				return false;} 
+			}
+		</script>
 	</body>
 </html>
 	

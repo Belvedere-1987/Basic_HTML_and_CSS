@@ -1,3 +1,15 @@
+body {
+	opacity: 1; 
+	transition: 5s opacity;
+}
+
+body.fade-out{
+	opacity: 0; 
+	transition: none; 
+}
+
+
+
 p {
 	color: dodgerBlue;
 	background: FireBrick;
@@ -5,3 +17,22 @@ p {
 	text-align:center;
 	text-shadow: 2px 2px 8px #FFFFF0;
   }
+
+@keyframes zoominoutsinglefeatured {
+	0% {transform: scale(1,1);
+		}
+	50% {
+		transform: scale(1.2,1.2);
+		}
+	100%{
+		transform: scale(1,1);
+	}
+}
+
+.zoom img{
+	animation: zoominoutsinglefeatured 15s forwards;
+}
+
+.popup {
+	display:none;
+}
